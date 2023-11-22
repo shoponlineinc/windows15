@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thank You</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+        }
+
+        .container {
+            text-align: center;
+            padding: 20px;
+            background-color: #000;
+            box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+            border: 4px solid #000;
+            border-radius: 50px;
+            font-size: 35px;
+            transition: box-shadow 0.3s ease-in-out;
+            color: #fff;
+        }
+
+        .container:hover {
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+transform: scale(1.2);
+        }
+
+        .button-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+margin-top:20px;
+border-radius:50px;
+            border: 4px solid black;
+            padding: 20px;
+            background-color: #000;
+            color: #fff;
+        }
+.button-container:hover{
+transform: scale(1.3);
+        }
+
+
+        .redirect-button {
+            padding: 10px 20px;
+            background-color: #000;
+            color: #fff;
+
+            cursor: pointer;
+            transition: background-color 0.3s ease-in-out;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="container" id="colorChangingDiv">
+        <p>Thank You For Your Donation, We appreciate it!</p>
+    </div>
+    <div class="button-container" id="button12" >
+        <button class="redirect-button" onclick="redirectToWinPage()">Return to Windows 15</button>
+    </div>
+    <script>
+        let currentBorderColorIndex = 0;
+        const borderColors = ['pink', 'blue', 'red', 'yellow', 'green', 'cyan'];
+
+        function changeBorderColor() {
+            const colorChangingDiv = document.getElementById('colorChangingDiv');
+const changebutton = document.getElementById('button12');
+            colorChangingDiv.style.borderColor = borderColors[currentBorderColorIndex];
+changebutton.style.borderColor = borderColors[currentBorderColorIndex];
+            currentBorderColorIndex = (currentBorderColorIndex + 1) % borderColors.length;
+            setTimeout(changeBorderColor, 500); // Change color every 2 seconds
+        }
+
+        changeBorderColor(); // Start the color-changing loop
+
+        function redirectToWinPage() {
+            window.location.href = "win.html";
+        }
+    </script>
+</body>
+</html>

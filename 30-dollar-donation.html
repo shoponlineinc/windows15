@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thank You for Your Donation</title>
+  <link rel="icon" href="icon2.png">
+    <style>
+        body {
+            font-family: "Segoe Print";
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .message-container {
+            background-color: white;
+            color: black;
+            max-width: 1000px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+
+        .pay-container {
+            background-color: white;
+            color: black;
+            max-width: 1000px;
+            border-radius: 10px;
+            border: 3px solid gold;
+            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            padding: 20px 100px;
+        }
+
+        .paypal-button {
+
+            background-color: #0070ba;
+            color: white;
+            padding: 15px 40px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+        .paypal-button:hover {
+            background-color: #005495;
+
+        }
+
+        h1 {
+            font-family: 'Papyrus', sans-serif;
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 18px;
+            line-height: 1.5;
+            word-wrap: break-word;
+        }
+
+@media only screen and (max-width:600px){
+
+
+        body {
+            font-family: "Segoe Print";
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .message-container {
+            background-color: white;
+            color: black;
+            width: 80%;
+            border-radius: 10px;
+            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+
+        .pay-container {
+            background-color: white;
+            color: black;
+            max-width: 1000px;
+            border-radius: 10px;
+            border: 3px solid gold;
+            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            padding: 20px 50px;
+        }
+
+        h1 {
+            font-family: 'Papyrus', sans-serif;
+            font-size: 25px;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 15px;
+            line-height: 1.5;
+            word-wrap: break-word;
+        }
+
+
+        }
+
+    </style>
+</head>
+<body>
+<br>
+    <div class="message-container">
+        <h1>Thank You for Your Donation</h1>
+        <p>
+           Thank you from the bottom of our hearts for your generous donation 
+           to our website. Your support means the world to us, and we are incredibly
+           grateful for your kindness.
+           <br><br>
+           Your donation will help us continue our mission. It allows us to develop 
+           new features, improve
+           our services, and reach even more people with our content and resources.
+           <br><br>
+           Your contribution goes beyond financial support; it is a vote of 
+           confidence in what we do. It motivates us to work harder, innovate, 
+           and strive for excellence in everything we offer. We promise to use your
+           donation wisely and efficiently to fulfill our goals and serve our 
+           community better.
+           <br><br>
+           Once again, thank you for your generosity and belief in our cause.
+           Your support fuels our passion, and we are excited about the future 
+           possibilities that lie ahead, thanks to you.<br>
+        </p>
+    </div>
+
+    <div class="pay-container">
+        <div id="paypal-button-container"></div>
+    </div>
+
+    <script src="https://www.paypal.com/sdk/js?client-id=AfAfKKUXWG8iPC5mwgjuVaJvhcyR0CrCPvOOTJT_VSRhyxmfcHWBE-6X6Nc9FPnvkz9vzfEy1hhrgPZL&disable-funding=card"></script>
+    <script>
+        paypal.Buttons({
+            createOrder: function(data, actions) {
+                return actions.order.create({
+                    purchase_units: [{
+                        amount: {
+                            value: '30' // Change this to the desired payment amount
+                        }
+                    }]
+                });
+            },
+            onApprove: function(data, actions) {
+                return actions.order.capture().then(function(details) {
+                    // Redirect to the result page after payment approval
+                    window.location.href = 'approved.html';
+                });
+            }
+        }).render('#paypal-button-container');
+    </script>
+</body>
+</html>

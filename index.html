@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4072744372645233"
+     crossorigin="anonymous"></script>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Password</title>
+  <link rel="icon" href="icon2.png">
+  <style>
+    body {
+      margin: 0;
+      display: flex;
+      flex-direction: column; /* Stack elements vertically */
+      align-items: center;
+      justify-content: center; /* Center content vertically */
+      height: 677px;
+      border: 7px solid red; /* Initial body border color */
+      transition: border-color 0.5s;
+      background-color: black;
+      border-radius: 50px;
+    }
+
+    .password-container {
+      position: relative;
+      border-radius: 10px;
+      padding: 10px;
+      margin: 10px;
+      border: 2px solid red; /* Initial password container border color */
+      transition: border-color 0.5s;
+    }
+
+h3:hover {
+transform: scale(1.4);
+    }
+
+
+    .password-container:hover {
+transform: scale(1.2);
+    }
+
+    input[type="password"] {
+      width: 200px;
+      height: 30px;
+      border: none;
+      outline: none;
+      font-size: 16px;
+      padding: 5px;
+      background-color: transparent;
+      color: white;
+    }
+
+    .hint-button {
+      cursor: pointer;
+      color: blue; /* Change text color to blue */
+      margin-top: 5px;
+    }
+
+    .hint-button:hover {
+      transform: scale(1.5);
+    }
+
+    h3 {
+      color: white;
+    }
+
+    .hint-text {
+      color: white;
+      font-size: 20px;
+      margin-top: 10px;
+      display: none;
+    }
+
+    .wrong-password {
+      color: red;
+      font-size: 14px;
+      margin-top: 5px;
+      display: none; /* Initially hidden */
+    }
+  </style>
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      const passwordInput = document.getElementById('password-input');
+      const heading = document.getElementById('heading');
+      const hintButton = document.querySelector('.hint-button');
+      const hintTextElement = document.querySelector('.hint-text');
+      const wrongPasswordElement = document.querySelector('.wrong-password');
+
+      let borderColorIndex = 0;
+      const borderColors = ['red', 'green', 'cyan'];
+
+      function changeBorderColor() {
+        borderColorIndex = (borderColorIndex + 1) % borderColors.length;
+        document.body.style.borderColor = borderColors[borderColorIndex];
+        passwordInput.parentElement.style.borderColor = borderColors[borderColorIndex];
+      }
+
+      passwordInput.addEventListener('keydown', function(event) {
+        if (event.key === 'Enter') {
+          if (passwordInput.value === '65478') {
+            window.location.href = 'win.html';
+          } else {
+            wrongPasswordElement.textContent = 'Wrong password';
+            wrongPasswordElement.style.display = 'block';
+
+            setTimeout(function() {
+              wrongPasswordElement.style.display = 'none';
+            }, 1000); // Display "Wrong password" for 2 seconds
+          }
+        }
+      });
+
+      hintButton.addEventListener('click', function() {
+        if (hintTextElement.style.display === 'block') {
+          hintTextElement.style.display = 'none';
+        } else {
+          hintTextElement.style.display = 'block';
+        }
+      });
+
+      setInterval(changeBorderColor, 700); // Change border color every 0.7 seconds
+    });
+  </script>
+</head>
+<body>
+  <h3 id="heading">Password: </h3>
+  <div class="password-container">
+    <input type="password" id="password-input" placeholder="Password">
+    <div class="wrong-password"></div>
+  </div>
+  <div class="hint-button">Hint</div>
+  <div class="hint-text">Password is 65478</div>
+</body>
+</html>

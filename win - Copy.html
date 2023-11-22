@@ -1,0 +1,2608 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4072744372645233"
+     crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="icon2.png">
+<title> Windows 15 </title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-image: url('bg.jfif');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center center;
+        }
+
+
+        #calculator {
+            width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f0f0f0;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+text-align:center;
+        }
+
+        #result {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        #buttons {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-gap: 5px;
+        }
+
+        .button {
+            font-size: 26px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.2s;
+        }
+
+        .button:hover {
+            background-color: #ddd;
+        }
+
+        #clear {
+            grid-column: span 4;
+            background-color: #ff5555;
+            color: white;
+        }
+
+
+        .container1 {
+            display: flex;
+            height: auto;
+background-color:white;	
+        }
+
+
+
+ .donation-button {
+    background-color: black;
+    color: white;
+    width: 400px;
+    height: 30px;
+
+            border: 3px solid gold;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+border-radius:50px;
+}
+
+.donation-button:hover {
+    background-color: white; /* Darken the background on hover */
+color:black;
+}
+
+
+        .left-panel {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            padding: 10px;
+            background-color: white;
+        }
+
+        .buttonegg {
+            padding: 20px 100px;
+            margin-top:30px;
+margin-left:20px;
+            background-color: #555;
+            color: #fff;
+            cursor: pointer;
+            transition: transform 0.3s;
+border-radius:50px;
+border: 3px solid black;
+        }
+
+        .buttonegg:hover {
+            transform: scale(1.2);
+        }
+
+        .vertical-line {
+            width: 2px;
+            height: 100%;
+            background-color: black;
+            position: absolute;
+            left: 400px;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+        }
+
+
+
+        .right-panel {
+            flex: 2;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .image-buttons {
+            display: flex;
+        }
+
+        .image-button {
+            padding: 0;
+            background-color: transparent;
+            border: 3px solid gold;
+            cursor: pointer;
+            width: 100px;
+            height: 100px;
+            background-size: cover;
+            margin: 10px;
+border-radius:50px;
+        }
+
+
+.paypal-button {
+    /* Your custom styles here */
+    background-color: #0070ba;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.paypal-button:hover {
+    background-color: #005495;
+}
+
+
+
+
+
+
+
+
+        .image-button1 {
+            padding: 0;
+            background-color: black;
+            border: 3px solid gold;
+            color:white;
+            cursor: pointer;
+            width: 100px;
+            height: 50px;
+            background-size: cover;
+            margin: 10px;
+border-radius:50px;
+        }
+
+
+
+
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 70vh;
+      border-radius: 10px;
+      border: 7px solid red; /* Initial border color */
+      transition: border-color 0.5s;
+      position: relative; /* Added for fireflies */
+background-color:black;
+    }
+
+    #search-bar {
+      padding: 15px;
+      border: 3px solid #ff0000; /* Initial border color (red) */
+      border-radius: 50px;
+      width: 500px;
+      font-size: 18px;
+      background-color: transparent;
+      color: #fff;
+      text-align: center;
+      outline: none;
+      transition: border-color 0.7s ease; /* Border color transition (700ms) */
+    }
+
+    #search-bar:focus {
+      border-color: #00ff00; /* Border color on focus (green) */
+    }
+
+    .buttons-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-top: 30px;
+    }
+
+    .custom-button {
+      display: inline-block;
+      height: 100px;
+      width: 100px;
+      margin: 10px;
+      background: linear-gradient(45deg, #ff0000, #00ff00, #0000ff);
+      background-size: 600% 100%;
+      color: #fff;
+      border: 3px solid #0000ff; /* Initial border color (blue) */
+      border-radius: 50%;
+      text-decoration: none;
+      font-size: 18px;
+      cursor: pointer;
+      transition: border-color 0.7s ease; /* Border color transition (700ms) */
+    }
+
+    .custom-button img {
+      width: 100%; /* Make the image cover the button */
+      height: 100%; /* Make the image cover the button */
+      object-fit: cover; /* Keep the aspect ratio and cover the button */
+      border-radius: 50%; /* Match the button's border radius */
+    }
+
+    .fireflies-container {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+    }
+
+    /* Updated firefly styles */
+    .firefly {
+      position: absolute;
+      width: 4px;
+      height: 4px;
+      border-radius: 50%;
+      animation: moveFirefly 5s linear infinite;
+    }
+
+    @keyframes moveFirefly {
+      0% {
+        transform: translate(0, 0);
+      }
+      100% {
+        transform: translate(100px, 100px); /* Adjust the distance and direction of movement */
+      }
+    }
+
+        #desktop {
+
+            width: 100vw;
+            height: 100vh;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .vid {
+            position: absolute;
+            width: 100px;
+            height: 100px;
+            background-color: #333;
+            background-image: none;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center center;
+            border-radius: 10px;
+            text-align: center;
+            padding: 10px;
+            color: white;
+            cursor: pointer;
+            border: 5px solid transparent;
+            transition: border-color 0.3s;
+        }
+	#vid1 { top: 50px; left: 30px; }
+	#vid2 { top: 50px; left: 180px; }
+	#vid3 { top: 50px; left: 330px; }
+  	#vid4 { top: 50px; left: 480px; }
+	#vid5 { top: 220px; left: 30px; }
+	#vid6 { top: 220px; left: 480px; }
+	#vid7 { top: 380px; left: 30px; }
+	#vid8 { top: 380px; left: 480px; }
+
+        .vid:nth-child(1) {
+            border-color: red;
+            background-image: url('quraan.jfif');
+        }
+        .vid:nth-child(2) {
+            border-color: orange;
+            background-image: url('ball.jfif');
+        }
+
+  .vid:nth-child(3) {
+    border-color: yellow;
+    background-image: url('laugh.jfif');
+  }
+  .vid:nth-child(4) {
+    border-color: lime;
+    background-image: url('cute.jfif');
+  }
+  .vid:nth-child(5) {
+    border-color: green;
+    background-image: url('cool.jfif');
+  }
+  .vid:nth-child(6) {
+    border-color: cyan;
+    background-image: url('img-7.jfif');
+  }
+  .vid:nth-child(7) {
+    border-color: blue;
+    background-image: url('coder.jfif');
+  }
+  .vid:nth-child(8) {
+    border-color: red;
+    background-image: url('satisfy.jfif');
+  }
+  .vid:nth-child(9) {
+    border-color: yellow;
+    background-image: url('img-9.jfif');
+  }
+  .vid:nth-child(10) {
+    border-color: green;
+    background-image: url('img-10.jfif');
+  }
+
+
+
+        .pic {
+            position: absolute;
+            width: 100px;
+            height: 100px;
+            background-color: #333;
+            background-image: none;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center center;
+            border-radius: 10px;
+            text-align: center;
+            padding: 10px;
+            color: white;
+            cursor: pointer;
+            border: 5px solid transparent;
+            transition: border-color 0.3s;
+        }
+	#pic1 { top: 50px; left: 30px; }
+	#pic2 { top: 50px; left: 180px; }
+	#pic3 { top: 50px; left: 330px; }
+  	#pic4 { top: 50px; left: 480px; }
+	#pic5 { top: 220px; left: 30px; }
+	#pic6 { top: 220px; left: 480px; }
+	#pic7 { top: 380px; left: 30px; }
+	#pic8 { top: 380px; left: 480px; }
+
+        .pic:nth-child(1) {
+            border-color: red;
+            background-image: url('im10.jpg');
+        }
+        .pic:nth-child(2) {
+            border-color: orange;
+            background-image: url('im1.jpg');
+        }
+
+  .pic:nth-child(3) {
+    border-color: yellow;
+            background-image: url('im4.jpg');
+  }
+  .pic:nth-child(4) {
+    border-color: lime;
+            background-image: url('im3.jpg');
+  }
+  .pic:nth-child(5) {
+    border-color: green;
+            background-image: url('im2.jpg');
+  }
+  .pic:nth-child(6) {
+    border-color: cyan;
+            background-image: url('im7.jpg');
+  }
+  .pic:nth-child(7) {
+    border-color: blue;
+            background-image: url('im8.jpg');
+  }
+  .pic:nth-child(8) {
+    border-color: red;
+            background-image: url('im5.jpg');
+  }
+
+
+
+
+        h1 {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+
+        #quote {
+            font-size: 24px;
+            margin: 20px 0;
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+
+
+
+        #joke {
+            font-size: 24px;
+            margin: 20px 0;
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+
+
+
+
+        #buttons123 {
+            margin-top: 10px;
+            text-align: center;
+        }
+
+        .button123 {
+            font-size: 16px;
+            padding: 10px 20px;
+            margin: 0 10px;
+            cursor: pointer;
+            border-radius: 50px;
+            border: 3px solid black;
+        }
+
+
+.button123:hover {
+transform: scale(1.2);
+color:white;
+background-color:black;
+
+        }
+
+
+        .app {
+            position: absolute;
+            width: 130px;
+            height: 130px;
+            background-color: #333;
+            background-image: none;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center center;
+            border-radius: 10px;
+            text-align: center;
+            padding: 10px;
+            color: white;
+            cursor: pointer;
+            border: 3px solid transparent;
+            transition: border-color 0.3s;
+        }
+
+
+.app:hover {
+           transform: scale(1.2);
+        }
+
+.taskbar-app:hover {
+           transform: scale(1.5);
+        }
+
+.vid:hover {
+           transform: scale(1.2);
+        }
+
+.pic:hover {
+           transform: scale(1.2);
+        }
+
+	#app1 { top: 130px; left: 200px; }
+	#app2 { top: 15px; left: 420px; }
+	#app3 { top: 15px; left: 640px; }
+  	#app4 { top: 15px; left: 860px; }
+	#app5 { top: 130px; left: 1080px; }
+	#app6 { top: 300px; left: 200px; }
+	#app7 { top: 430px; left: 420px; }
+	#app8 { top: 430px; left: 640px; }
+	#app9 { top: 430px; left: 860px; }
+	#app10 { top: 300px; left: 1080px; }
+
+
+        .app:nth-child(1) {
+            border-color: red;
+            background-image: url('img-1.jfif');
+        }
+        .app:nth-child(2) {
+            border-color: orange;
+            background-image: url('img-2.png');
+        }
+
+  .app:nth-child(3) {
+    border-color: yellow;
+    background-image: url('img-3.jpg');
+  }
+  .app:nth-child(4) {
+    border-color: lime;
+    background-image: url('img-4.png');
+  }
+  .app:nth-child(5) {
+    border-color: green;
+    background-image: url('img-5.jfif');
+  }
+  .app:nth-child(6) {
+    border-color: cyan;
+    background-image: url('img-6.jfif');
+  }
+  .app:nth-child(7) {
+    border-color: blue;
+    background-image: url('img-7.jfif');
+  }
+  .app:nth-child(8) {
+    border-color: red;
+    background-image: url('img-8.jfif');
+  }
+  .app:nth-child(9) {
+    border-color: yellow;
+    background-image: url('img-9.jfif');
+  }
+  .app:nth-child(10) {
+    border-color: green;
+    background-image: url('img-10.jfif');
+  }
+        
+        #taskbar {
+            position: absolute;
+            bottom: 20px;
+            left: 20px;
+            right: 20px;
+            display: flex;
+            justify-content: center;
+            background-color: #333;
+            border: 2px solid green;
+            background-color: black;
+            border-radius: 50px;
+            padding: 5px;
+        }
+
+
+       canvas {
+            border: 3px solid #000;
+border-radius:5%;
+            display: block;
+            margin: 0 auto;
+            cursor: crosshair;
+        }
+
+        .controls {
+            text-align: center;
+            margin-top: 10px;
+        }
+
+        .controls label {
+            font-weight: bold;
+        }
+
+        .controls select, .controls input[type="color"], .controls button {
+            margin: 5px;
+            padding: 5px 10px;
+            font-size: 16px;
+            border: none;
+            cursor: pointer;
+        }
+
+        .controls select {
+            background-color: #0078D7;
+            color: #fff;
+        }
+
+        .controls select:hover {
+            background-color: #005FAB;
+        }
+
+        .controls input[type="color"], .controls button {
+            background-color: #fff;
+            color: #0078D7;
+            border: 1px solid #0078D7;
+        }
+
+        .controls input[type="color"]:hover, .controls button:hover {
+            background-color: #f0f0f0;
+        }
+
+        .controls input[type="range"] {
+            width: 80px;
+        }
+
+
+        .taskbar-app {
+            width: 60px;
+            height: 60px;
+            background-color: #444;
+            border-radius: 50%;
+            margin-right: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            border: 3px solid transparent;
+        }
+        .taskbar-app:nth-child(1) {
+            border-color: red;
+        }
+        .taskbar-app:nth-child(2) {
+            border-color: orange;
+        }
+  .taskbar-app:nth-child(1) {
+    border-color: red;
+  }
+  .taskbar-app:nth-child(2) {
+    border-color: orange;
+  }
+  .taskbar-app:nth-child(3) {
+    border-color: yellow;
+  }
+  .taskbar-app:nth-child(4) {
+    border-color: lime;
+  }
+  .taskbar-app:nth-child(5) {
+    border-color: green;
+  }
+  .taskbar-app:nth-child(6) {
+    border-color: cyan;
+  }
+  .taskbar-app:nth-child(7) {
+    border-color: blue;
+  }
+  .taskbar-app:nth-child(8) {
+    border-color: red;
+  }
+  .taskbar-app:nth-child(9) {
+    border-color: yellow;
+  }
+  .taskbar-app:nth-child(10) {
+    border-color: green;
+  }
+        .taskbar-app img {
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+        }
+        .taskbar-app:hover {
+            background-color: #555;
+        }
+        .taskbar-app-text {
+            font-size: 12px;
+            color: white;
+            margin-top: 0px;
+        }
+        .window {
+            display: none;
+            position: absolute;
+            top: 100px;
+            left: 300px;
+	border: 3px solid black;
+            width: 700px;
+            height: 500px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .window-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            background-color: #333;
+            color: white;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            width: auto;
+        }
+        .window-close {
+            cursor: pointer;
+            margin-left: 10px;
+        }
+
+.window-close:hover {
+           transform: scale(2);
+        }
+
+
+.para {
+font-size:30px;
+text-align:center;
+        }
+
+
+        .window-content {
+            padding: 20px;
+            box-sizing: border-box;
+            border-top: 1px solid #ccc;
+            overflow-y: scroll;
+            text-align: left;
+            height: calc(100% - 70px);
+            user-select: none;
+        }
+        #notepad-save {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            padding: 5px 10px;
+        }
+        #notepad-save:hover {
+            background-color: #45a049;
+           transform: scale(1.2);
+        }
+
+        /* Placeholder style */
+        .window-content.placeholder::before {
+            content: "Start typing here...";
+            color: #ccc;
+            font-style: italic;
+            pointer-events: none;
+        }
+
+       .window1 {
+            display: none;
+            position: absolute;
+            top: 80px;
+            left: 100px;
+            width: 700px;
+	border: 3px solid black;
+            height: 550px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .window-header1 {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+text-align: center;
+            padding: 10px 20px;
+            background-color: #333;
+            color: white;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            width: auto;
+        }
+        .window-close1 {
+            cursor: pointer;
+            margin-left: 10px;
+        }
+
+.window-close1:hover {
+           transform: scale(2);
+        }
+
+        .window-content1 {
+            padding: 20px;
+            box-sizing: border-box;
+            border-top: 1px solid #ccc;
+            overflow-y: scroll;
+            align-items: center;
+            text-align: center;
+            height: calc(100% - 70px);
+            user-select: none;
+        }
+
+
+
+       .window2 {
+            display: none;
+            position: absolute;
+            top: 80px;
+            left: 100px;
+            width: 800px;
+            height: 600px;
+            background-color: #fff;
+	border: 3px solid black;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .window-header2 {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+text-align: center;
+            padding: 10px 20px;
+            background-color: #333;
+            color: white;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            width: auto;
+        }
+        .window-close2 {
+            cursor: pointer;
+            margin-left: 10px;
+        }
+
+.window-close2:hover {
+           transform: scale(2);
+        }
+
+        .window-content2 {
+            padding: 20px;
+            box-sizing: border-box;
+            border-top: 1px solid #ccc;
+            overflow-y: scroll;
+            align-items: center;
+            text-align: center;
+            height: calc(100% - 70px);
+            user-select: none;
+        }
+
+
+       .window3 {
+            display: none;
+            position: absolute;
+            top: 40px;
+            left: 70px;
+            width: 1200px;
+	border: 3px solid black;
+            height: 600px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .window-header3 {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+text-align: center;
+            padding: 10px 20px;
+            background-color: #333;
+            color: white;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            width: auto;
+        }
+        .window-close3 {
+            cursor: pointer;
+            margin-left: 10px;
+        }
+
+.window-close3:hover {
+           transform: scale(2);
+        }
+
+        .window-content3 {
+            padding: 20px;
+            box-sizing: border-box;
+            border-top: 1px solid #ccc;
+            overflow-y: scroll;
+            align-items: center;
+            text-align: center;
+            height: calc(100% - 70px);
+            user-select: none;
+        }
+
+
+       .vid1win {
+            display: none;
+            position: absolute;
+            top: 80px;
+	border: 3px solid black;
+            left: 500px;
+            width: 450px;
+            height: 600px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+	text-align: center;
+
+
+
+        }
+        .vid1header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+text-align: center;
+            padding: 10px 20px;
+            background-color: #333;
+            color: white;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            width: auto;
+        }
+        .vid1x {
+            cursor: pointer;
+            margin-left: 10px;
+        }
+        .vid1content {
+            padding: 20px;
+            box-sizing: border-box;
+            border-top: 1px solid #ccc;
+            overflow-y: scroll;
+            text-align: left;
+            height: calc(100% - 70px);
+            user-select: none;
+            justify-content: space-between;
+            align-items: center;
+text-align: center;
+        }
+
+
+
+
+       .pic1win {
+            display: none;
+            position: absolute;
+            top: 80px;
+            left: 500px;
+	border: 3px solid black;
+            width: 800px;
+            height: 600px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+	text-align: center;
+
+
+
+        }
+        .pic1header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+text-align: center;
+            padding: 10px 20px;
+            background-color: #333;
+            color: white;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            width: auto;
+        }
+        .pic1x {
+            cursor: pointer;
+            margin-left: 10px;
+        }
+        .pic1content {
+            padding: 20px;
+            box-sizing: border-box;
+            border-top: 1px solid #ccc;
+            overflow-y: scroll;
+            text-align: left;
+            height: calc(100% - 70px);
+            user-select: none;
+            justify-content: space-between;
+            align-items: center;
+text-align: center;
+        }
+
+
+@media only screen and (max-width: 500px) {
+
+
+
+
+        .app {
+
+            width: 80px;
+            height: 80px;
+
+        }
+
+
+
+
+        .vid {
+            width: 70px;
+            height: 70px;
+        }
+
+
+	#vid1 { top: 70px; left: 20px; }
+	#vid2 { top: 70px; left: 130px; }
+	#vid3 { top: 70px; left: 240px; }
+  	#vid4 { top: 200px; left: 20px; }
+	#vid5 { top: 200px; left: 130px; }
+	#vid6 { top: 200px; left: 240px; }
+	#vid7 { top: 330px; left: 70px; }
+	#vid8 { top: 330px; left: 190px;}
+
+
+
+h1 {
+font-size:20px;
+}
+
+ .donation-button {
+
+    width: 300px;
+    height: 30px;
+}
+
+
+        .buttonegg {
+            padding: 20px 70px;
+            margin-top:10px;
+margin-left:10px;
+
+        }
+
+
+        .vertical-line {
+            width: 2px;
+            height: 100%;
+            background-color: black;
+            position: absolute;
+            left: 300px;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+        }
+
+
+
+        .image-button {
+
+            width: 70px;
+            height: 70px;
+
+
+        }
+
+
+
+        .image-button1 {
+            padding: 0;
+            background-color: black;
+            border: 3px solid gold;
+            color:white;
+            cursor: pointer;
+            width: 100px;
+            height: 50px;
+            background-size: cover;
+
+margin: 3px;
+border-radius:50px;
+        }
+
+
+
+
+
+        .pic {
+
+            width: 70px;
+            height: 70px;
+
+        }
+
+
+	#pic1 { top: 70px; left: 20px; }
+	#pic2 { top: 70px; left: 130px; }
+	#pic3 { top: 70px; left: 240px; }
+  	#pic4 { top: 200px; left: 20px; }
+	#pic5 { top: 200px; left: 130px; }
+	#pic6 { top: 200px; left: 240px; }
+	#pic7 { top: 330px; left: 70px; }
+	#pic8 { top: 330px; left: 190px;}
+
+
+
+
+
+	#app1 { top: 40px; left: 30px; }
+	#app2 { top: 40px; left: 140px; }
+	#app3 { top: 40px; left: 250px; }
+  	#app4 { top: 170px; left: 30px; }
+	#app5 { top: 170px; left: 140px; }
+	#app6 { top: 170px; left: 250px; }
+	#app7 { top: 300px; left: 30px; }
+	#app8 { top: 300px; left: 140px; }
+	#app9 { top: 300px; left: 250px; }
+	#app10 { top: 410px; left: 150px; height:60px; width:60px; font-size:15px;}
+
+
+
+
+        #calculator {
+            width: 300px;
+
+        }
+
+
+
+
+        #taskbar {
+width:100%;
+margin-bottom:5px;
+            left: 5px;
+
+        display: flex;
+        flex-wrap: wrap; /* Enable wrapping to the next row */
+position:absolute;
+
+        }
+
+
+
+        .taskbar-app {
+            width: 50px;
+            height: 50px;
+margin-bottom:10px;
+
+        }
+
+
+
+        .window {
+            top: 10px;
+            left: 30px;
+            width: 350px;
+            height: 500px;
+        }
+
+
+       .window1 {
+            top: 20px;
+            left: 20px;
+            width: 350px;
+            height: 500px;
+        }
+
+       .window2 {
+            top: 10px;
+            left: 20px;
+            width: 800px;
+            height: 600px;
+        }
+
+       .window3 {
+            top: 10px;
+            left: 30px;
+            width: 900px;
+            height: 500px;
+        }
+
+       .vid1win {
+            top: 10px;
+            left: 10px;
+            width: 350px;
+            height: 600px;
+
+
+        }
+
+
+       .pic1win {
+            top: 10px;
+            left: 10px;
+            width: 400px;
+            height: 300px;
+
+        }
+
+
+
+
+    #search-bar {
+      width: 80%;
+      font-size: 18px;
+      background-color: transparent;
+      color: #fff;
+      text-align: center;
+      outline: none;
+      transition: border-color 0.7s ease; /* Border color transition (700ms) */
+    }
+
+
+    .custom-button {
+      display: inline-block;
+      height: 80px;
+      width: 80px;
+      margin: 10px;
+      background: linear-gradient(45deg, #ff0000, #00ff00, #0000ff);
+      background-size: 600% 100%;
+      color: #fff;
+      border: 3px solid #0000ff; /* Initial border color (blue) */
+      border-radius: 50%;
+      text-decoration: none;
+      font-size: 18px;
+      cursor: pointer;
+      transition: border-color 0.7s ease; /* Border color transition (700ms) */
+    }
+
+}
+
+
+
+    </style>
+</head>
+<body>
+<div id="desktop">
+    <div class="app" id="app1">Notepad</div>
+    <div class="app" id="app2">Watch Tunnel</div>
+  <div class="app" id="app3">Shop<br>Online Services</div>
+  <div class="app" id="app4">Toggle</div>
+  <div class="app" id="app5">Calculator</div>
+  <div class="app" id="app6">Gallery</div>
+  <div class="app" id="app7">Paint Time</div>
+  <div class="app" id="app8">Amazing Quotes</div>
+  <div class="app" id="app9">Funny Jokes</div>
+  <div class="app" id="app10">Settings</div>
+
+</div>
+<div id="taskbar">
+    <div class="taskbar-app" id="taskbar-notepad">
+        <img src="img1.jfif" alt="Notepad Icon">
+    </div>
+    <div class="taskbar-app" id="taskbar-watch-tunnel">
+        <img src="img2.png" alt="Watch Tunnel Icon">
+    </div>
+  <div class="taskbar-app" id="shoponlinetb">
+    <img src="img3.jpg" alt="shop Icon">
+  </div>
+  <div class="taskbar-app" id="tbsearch">
+    <img src="img4.png" alt="Toggle Icon">
+  </div>
+  <div class="taskbar-app" id="calcApptb">
+    <img src="img5.jfif" alt="Calculator Icon">
+  </div>
+  <div class="taskbar-app" id="taskbar-watch-tunnel1">
+    <img src="img6.jfif" alt="Gallery Icon">
+  </div>
+  <div class="taskbar-app" id = "painttimetb">
+    <img src="img7.jfif" alt="Paint Time Icon">
+  </div>
+  <div class="taskbar-app" id="quotestb">
+    <img src="img8.jfif" alt="Notes Icon">
+  </div>
+  <div class="taskbar-app" id="joketb">
+    <img src="img9.jfif" alt="Voice Record Icon">
+  </div>
+  <div class="taskbar-app" id="settingstb">
+    <img src="img10.jfif" alt="Settings Icon">
+  </div>
+</div>
+<div class="window" id="notepad-window">
+    <div class="window-header">
+        <span class="window-close" id="notepad-close">&times;</span>
+        Notepad
+        <button id="notepad-save">Save</button>
+    </div>
+    <div class="window-content" contenteditable="true" class="placeholder"></div>
+</div>
+
+
+
+
+<div class="window" id="shopwindow">
+    <div class="window-header">
+        <span class="window-close" id="shopclose">&times;</span>
+       Shop Online
+    </div>
+    <div class="window-content">
+
+ <p class = "para">Coming Soon!</p>
+
+</div>
+</div>
+
+
+
+
+<div class="window" id="calcwindow">
+    <div class="window-header">
+        <span class="window-close" id="calcclose">&times;</span>
+        Calculator
+    </div>
+    <div class="window-content">
+    <div id="calculator">
+        <div id="result">0</div>
+        <div id="buttons">
+            <div id="clear" class="button" onclick="clearInput()">C</div>
+            <div class="button" onclick="appendToInput('1')">1</div>
+            <div class="button" onclick="appendToInput('2')">2</div>
+            <div class="button" onclick="appendToInput('3')">3</div>
+            <div class="button" onclick="appendToInput('+')">+</div>
+            <div class="button" onclick="appendToInput('4')">4</div>
+            <div class="button" onclick="appendToInput('5')">5</div>
+            <div class="button" onclick="appendToInput('6')">6</div>
+            <div class="button" onclick="appendToInput('-')">-</div>
+            <div class="button" onclick="appendToInput('7')">7</div>
+            <div class="button" onclick="appendToInput('8')">8</div>
+            <div class="button" onclick="appendToInput('9')">9</div>
+            <div class="button" onclick="appendToInput('*')">*</div>
+            <div class="button" onclick="appendToInput('0')">0</div>
+            <div class="button" onclick="appendToInput('.')">.</div>
+            <div class="button" onclick="calculateResult()">=</div>
+        </div>
+    </div>
+
+</div>
+</div>
+
+
+<div class="window" id="searchwindow">
+    <div class="window-header">
+        <span class="window-close" id="searchclose">&times;</span>
+        Toggle Search
+    </div>
+    <div class="window-content">
+  <div class="container">
+    <input type="text" id="search-bar" placeholder="Search Google" onkeydown="searchOnEnter(event)">
+    <div class="buttons-container">
+<a href="https://www.google.com/" class="custom-button" target="_blank"><img src="1.png"></a>
+<a href="https://www.gmail.com" class="custom-button" target="_blank"><img src="2.png"></a>
+<a href="https://www.youtube.com" class="custom-button" target="_blank"><img src="3.png"></a>
+<a href="https://www.canva.com" class="custom-button" target="_blank"><img src="4.png"></a>
+
+    </div>
+    <div class="fireflies-container"></div>
+  </div>
+</div>
+</div>
+
+
+<div class="window1" id="watch-tunnel-window">
+    <div class="window-header1">
+        <span class="window-close1" id="watch-tunnel-close">&times;</span>
+        Watch Tunnel
+    </div>
+    <div class="window-content1">
+    <div class="vid" id="vid1">Quran</div>
+   <div class="vid" id="vid2">Football</div>
+   <div class="vid" id="vid3">Funny</div>
+   <div class="vid" id="vid4">Cute</div>
+   <div class="vid" id="vid5">Respect</div>
+   <div class="vid" id="vid6">Painting</div>
+   <div class="vid" id="vid7">Programming</div>
+   <div class="vid" id="vid8">Satisfying</div>
+    </div>
+</div>
+
+<div class="vid1win" id="vid1window">
+    <div class="vid1header">
+        <span class="vid1x" id="vid1close">&times;</span>
+        Quran
+    </div>
+    <div class="vid1content" contenteditable="false">
+<h2>Translation of Surah Al-Qadar</h2>
+    <video controls width="350" height="400">
+        <source src="Surah Al-Qadar.mp4" type="video/mp4" id="video1">
+    </video>  
+   </div>
+</div>
+
+
+<div class="vid1win" id="vid2window">
+    <div class="vid1header">
+        <span class="vid1x" id="vid2close">&times;</span>
+        Football
+    </div>
+    <div class="vid1content" contenteditable="false">
+<h2>Psg vs Al-Nassr</h2>
+    <video controls width="350" height="400">
+        <source src="Psg vs Al-Nassr.mp4" type="video/mp4">
+    </video>  
+   </div>
+</div>
+
+
+<div class="vid1win" id="vid3window">
+    <div class="vid1header">
+        <span class="vid1x" id="vid3close">&times;</span>
+        Funny
+    </div>
+    <div class="vid1content" contenteditable="false">
+<h2>Funny Baby Videos <br> Try not to laugh!</h2>
+    <video controls width="350" height="400">
+        <source src="Funnybabies.mp4" type="video/mp4">
+    </video>  
+   </div>
+</div>
+
+
+<div class="vid1win" id="vid4window">
+    <div class="vid1header">
+        <span class="vid1x" id="vid4close">&times;</span>
+        Cute
+    </div>
+    <div class="vid1content" contenteditable="false">
+<h2>Cute Baby Videos</h2>
+    <video controls width="350" height="400">
+        <source src="cute.mp4" type="video/mp4">
+    </video>  
+   </div>
+</div>
+
+
+<div class="vid1win" id="vid5window">
+    <div class="vid1header">
+        <span class="vid1x" id="vid5close">&times;</span>
+        Respect
+    </div>
+    <div class="vid1content" contenteditable="false">
+<h2>Respect Videos</h2>
+    <video controls width="350" height="400">
+        <source src="respect.mp4" type="video/mp4">
+    </video>  
+   </div>
+</div>
+
+
+<div class="vid1win" id="vid6window">
+    <div class="vid1header">
+        <span class="vid1x" id="vid6close">&times;</span>
+        Painting
+    </div>
+    <div class="vid1content" contenteditable="false">
+<h2>Painting Video</h2>
+    <video controls width="350" height="400">
+        <source src="paint.mp4" type="video/mp4">
+    </video>  
+   </div>
+</div>
+
+
+<div class="vid1win" id="vid7window">
+    <div class="vid1header">
+        <span class="vid1x" id="vid7close">&times;</span>
+        Programming
+    </div>
+    <div class="vid1content" contenteditable="false">
+<h2>Cat Programming</h2>
+    <video controls width="350" height="400">
+        <source src="cat.mp4" type="video/mp4">
+    </video>  
+   </div>
+</div>
+
+
+<div class="vid1win" id="vid8window">
+    <div class="vid1header">
+        <span class="vid1x" id="vid8close">&times;</span>
+        Satisfying
+    </div>
+    <div class="vid1content" contenteditable="false">
+<h2>Satisfying Video</h2>
+    <video controls width="350" height="400">
+        <source src="satisfy.mp4" type="video/mp4">
+    </video>  
+   </div>
+</div>
+
+<div class="window2" id="canvaswindow">
+    <div class="window-header2">
+        <span class="window-close2" id="canvasclose">&times;</span>
+        Paint Time
+    </div>
+    <div class="window-content2">
+   <div class="controls">
+        <label for="brushColor">Color:</label>
+        <input type="color" id="brushColor" value="#000000">
+
+        <label for="brushSize">Size:</label>
+        <input type="range" id="brushSize" min="1" max="50" value="5">
+
+        <label for="brushType">Type:</label>
+        <select id="brushType">
+            <option value="round">Round</option>
+            <option value="square">Square</option>
+        </select>
+
+        <button id="fillBucket">Fill Bucket</button>
+        <button id="clearCanvas">Clear</button>
+        <button id="saveImage">Save</button>
+    </div>
+<br>
+    <canvas id="canvas"></canvas>
+</div>
+</div>
+
+
+
+
+<div class="window3" id="settingswindow">
+    <div class="window-header3">
+        <span class="window-close3" id="settingsclose">&times;</span>
+        Settings
+    </div>
+    <div class="window-content3">
+    <div class="container1">
+        <div class="left-panel">
+            <div class="buttonegg" id="button1">Background</div>
+            <div class="buttonegg" id="button2">Accessibility</div>
+            <div class="buttonegg" id="button4">Donate</div>
+            <div class="buttonegg" id="button3">About</div>
+            <div class="vertical-line"></div>
+        </div>
+        <div class="right-panel">
+            <!-- Content will be dynamically loaded here -->
+        </div>
+    </div>
+</div>
+</div>
+
+
+
+
+<div class="window1" id="watch-tunnel-window1">
+    <div class="window-header1">
+        <span class="window-close1" id="watch-tunnel-close1">&times;</span>
+        Gallery
+    </div>
+    <div class="window-content1">
+    <div class="pic" id="pic1">Car</div>
+   <div class="pic" id="pic2">Mountain</div>
+   <div class="pic" id="pic3">Skull</div>
+   <div class="pic" id="pic4">Sunset</div>
+   <div class="pic" id="pic5">Satisfying</div>
+   <div class="pic" id="pic6">Wolf</div>
+   <div class="pic" id="pic7">Tiger</div>
+   <div class="pic" id="pic8">Car 2</div>
+    </div>
+</div>
+
+<div class="pic1win" id="pic1window">
+    <div class="pic1header">
+        <span class="pic1x" id="pic1close">&times;</span>
+        Car
+    </div>
+    <div class="pic1content" contenteditable="false">
+    <img src="im10.jpg" alt="Car"  width="350" height="250">
+   </div>
+</div>
+
+
+<div class="pic1win" id="pic2window">
+    <div class="pic1header">
+        <span class="pic1x" id="pic2close">&times;</span>
+        Mountain
+    </div>
+    <div class="pic1content" contenteditable="false">
+    <img src="im1.jpg" alt="Mountain"  width="350" height="250">
+   </div>
+</div>
+
+
+<div class="pic1win" id="pic3window">
+    <div class="pic1header">
+        <span class="pic1x" id="pic3close">&times;</span>
+        Skull
+    </div>
+    <div class="pic1content" contenteditable="false">
+    <img src="im4.jpg" alt="Skull"  width="350" height="250"> 
+   </div>
+</div>
+
+
+<div class="pic1win" id="pic4window">
+    <div class="vid1header">
+        <span class="vid1x" id="pic4close">&times;</span>
+        Sunset
+    </div>
+    <div class="vid1content" contenteditable="false">
+    <img src="im3.jpg" alt="Sunset"  width="350" height="250">
+   </div>
+</div>
+
+
+<div class="pic1win" id="pic5window">
+    <div class="vid1header">
+        <span class="vid1x" id="pic5close">&times;</span>
+        Satisfying
+    </div>
+    <div class="vid1content" contenteditable="false">
+    <img src="im2.jpg" alt="Satisfying"  width="350" height="250">
+   </div>
+</div>
+
+
+<div class="pic1win" id="pic6window">
+    <div class="vid1header">
+        <span class="vid1x" id="pic6close">&times;</span>
+        Wolf
+    </div>
+    <div class="vid1content" contenteditable="false">
+    <img src="im7.jpg" alt="Wolf"  width="350" height="250">
+   </div>
+</div>
+
+
+<div class="pic1win" id="pic7window">
+    <div class="vid1header">
+        <span class="vid1x" id="pic7close">&times;</span>
+        Tiger
+    </div>
+    <div class="vid1content" contenteditable="false">
+    <img src="im8.jpg" alt="Tiger"  width="350" height="250">
+   </div>
+</div>
+
+
+<div class="pic1win" id="pic8window">
+    <div class="vid1header">
+        <span class="vid1x" id="pic8close">&times;</span>
+        Car 2
+    </div>
+    <div class="vid1content" contenteditable="false">
+    <img src="im5.jpg" alt="Car 2" width="350" height="250">
+   </div>
+</div>
+
+
+
+
+
+<div class="window" id="quoteswindow">
+    <div class="window-header">
+        <span class="window-close" id="quotesclose">&times;</span>
+        Amazing Quotes
+    </div>
+    <div class="window-content">
+    <h1>Amazing Quotes</h1>
+<hr>
+    <div id="quote"></div>
+<hr>
+<br>
+    <div id="buttons123">
+        <button class="button123" id="prev">Previous</button>
+        <button class="button123" id="next">Next</button>
+    </div>
+
+</div>
+</div>
+
+
+
+
+<div class="window" id="jokewindow">
+    <div class="window-header">
+        <span class="window-close" id="jokeclose">&times;</span>
+        Funny Jokes
+    </div>
+    <div class="window-content">
+    <h1>Funny Jokes</h1>
+<hr>
+    <div id="joke"></div>
+<hr>
+<br>
+    <div id="buttons123">
+        <button class="button123" id="prev1">Previous</button>
+        <button class="button123" id="next1">Next</button>
+    </div>
+
+
+</div>
+</div>
+
+
+
+
+
+
+<script>
+    const setApp = document.getElementById('app10');
+    const setApptb = document.getElementById('settingstb');
+    const setWindow = document.getElementById('settingswindow');
+    const setClose = document.getElementById('settingsclose');
+
+
+
+    setApp.addEventListener('click', () => {
+        setWindow.style.display = 'block';
+    });
+
+    setApptb.addEventListener('click', () => {
+        setWindow.style.display = 'block';
+    });
+
+    setClose.addEventListener('click', () => {
+        setWindow.style.display = 'none';
+    });
+
+
+
+
+
+    const notepadApp = document.getElementById('app1');
+    const notepadApptb = document.getElementById('taskbar-notepad');
+    const notepadWindow = document.getElementById('notepad-window');
+    const notepadClose = document.getElementById('notepad-close');
+    const notepadContent = document.querySelector('#notepad-window .window-content');
+    const notepadSave = document.getElementById('notepad-save');
+
+
+
+    notepadApp.addEventListener('click', () => {
+        notepadWindow.style.display = 'block';
+    });
+
+    notepadApptb.addEventListener('click', () => {
+        notepadWindow.style.display = 'block';
+    });
+
+    notepadClose.addEventListener('click', () => {
+        notepadContent.textContent = '';
+        notepadWindow.style.display = 'none';
+    });
+
+
+    // Placeholder behavior for Notepad
+    notepadContent.addEventListener('focus', () => {
+        notepadContent.classList.remove('placeholder');
+    });
+
+    notepadContent.addEventListener('blur', () => {
+        if (!notepadContent.textContent.trim()) {
+            notepadContent.classList.add('placeholder');
+        }
+    });
+
+  notepadSave.addEventListener('click', () => {
+    const textToSave = notepadContent.textContent;
+    const blob = new Blob([textToSave], { type: 'text/plain' });
+    const url = window.URL.createObjectURL(blob);
+
+    const a = document.createElement('a');
+    a.style.display = 'none';
+    a.href = url;
+    a.download = 'notepad.txt';
+    document.body.appendChild(a);
+    a.click();
+    window.URL.revokeObjectURL(url);
+  });
+
+
+
+
+    const paintApp = document.getElementById('app7');
+    const paintApptb = document.getElementById('painttimetb');
+    const canvasWindow = document.getElementById('canvaswindow');
+    const canvasClose = document.getElementById('canvasclose');
+        const canvas = document.getElementById('canvas');
+        const ctx = canvas.getContext('2d');
+        const brushColor = document.getElementById('brushColor');
+        const brushSize = document.getElementById('brushSize');
+        const brushType = document.getElementById('brushType');
+        const fillBucket = document.getElementById('fillBucket');
+        const clearCanvas = document.getElementById('clearCanvas');
+        const saveImage = document.getElementById('saveImage');
+        let painting = false;
+
+
+  canvas.width = 700;
+        canvas.height = 450;
+
+
+
+
+        ctx.lineWidth = brushSize.value;
+        ctx.lineCap = brushType.value;
+
+        brushColor.addEventListener('input', () => {
+            ctx.strokeStyle = brushColor.value;
+        });
+
+        brushSize.addEventListener('input', () => {
+            ctx.lineWidth = brushSize.value;
+        });
+
+        brushType.addEventListener('change', () => {
+            ctx.lineCap = brushType.value;
+        });
+
+        fillBucket.addEventListener('click', () => {
+            const fillColor = brushColor.value;
+            ctx.fillStyle = fillColor;
+            ctx.fillRect(0, 0, canvas.width, canvas.height);
+        });
+
+        clearCanvas.addEventListener('click', () => {
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+        });
+
+        saveImage.addEventListener('click', () => {
+            const image = canvas.toDataURL('image/png');
+            const a = document.createElement('a');
+            a.href = image;
+            a.download = 'my_painting.png';
+            a.click();
+        });
+
+        canvas.addEventListener('mousedown', () => {
+            painting = true;
+        });
+
+        canvas.addEventListener('mouseup', () => {
+            painting = false;
+            ctx.beginPath();
+        });
+
+        canvas.addEventListener('mousemove', draw);
+
+        function draw(e) {
+            if (!painting) return;
+
+            ctx.lineJoin = 'round';
+            ctx.lineTo(e.clientX - canvas.getBoundingClientRect().left, e.clientY - canvas.getBoundingClientRect().top);
+            ctx.stroke();
+            ctx.beginPath();
+            ctx.moveTo(e.clientX - canvas.getBoundingClientRect().left, e.clientY - canvas.getBoundingClientRect().top);
+        }
+
+
+
+
+    paintApp.addEventListener('click', () => {
+        canvasWindow.style.display = 'block';
+    });
+
+    painttimetb.addEventListener('click', () => {
+        canvasWindow.style.display = 'block';
+    });
+
+    canvasClose.addEventListener('click', () => {
+        canvasWindow.style.display = 'none';
+    });
+
+
+
+    const watchTunnelApp = document.getElementById('app2');
+    const watchTunnelApptb = document.getElementById('taskbar-watch-tunnel');
+    const watchTunnelWindow = document.getElementById('watch-tunnel-window');
+    const watchTunnelClose = document.getElementById('watch-tunnel-close');
+
+
+
+    watchTunnelApp.addEventListener('click', () => {
+        watchTunnelWindow.style.display = 'block';
+    });
+
+    watchTunnelApptb.addEventListener('click', () => {
+        watchTunnelWindow.style.display = 'block';
+    });
+
+    watchTunnelClose.addEventListener('click', () => {
+        watchTunnelWindow.style.display = 'none';
+    });
+
+
+
+    const jokesApp = document.getElementById('app9');
+    const jokesApptb = document.getElementById('joketb');
+    const jokesWindow = document.getElementById('jokewindow');
+    const jokesClose = document.getElementById('jokeclose');
+
+
+
+    jokesApp.addEventListener('click', () => {
+        jokesWindow.style.display = 'block';
+    });
+
+    jokesApptb.addEventListener('click', () => {
+        jokesWindow.style.display = 'block';
+    });
+
+    jokesClose.addEventListener('click', () => {
+        jokesWindow.style.display = 'none';
+    });
+
+
+
+    const watchTunnelApp1 = document.getElementById('app6');
+    const watchTunnelApptb1 = document.getElementById('taskbar-watch-tunnel1');
+    const watchTunnelWindow1 = document.getElementById('watch-tunnel-window1');
+    const watchTunnelClose1 = document.getElementById('watch-tunnel-close1');
+
+
+
+    watchTunnelApp1.addEventListener('click', () => {
+        watchTunnelWindow1.style.display = 'block';
+    });
+
+    watchTunnelApptb1.addEventListener('click', () => {
+        watchTunnelWindow1.style.display = 'block';
+    });
+
+    watchTunnelClose1.addEventListener('click', () => {
+        watchTunnelWindow1.style.display = 'none';
+    });
+
+
+
+
+    const ShopApp = document.getElementById('app3');
+    const shoponlinetb = document.getElementById('shoponlinetb');
+    const shopWindow = document.getElementById('shopwindow');
+    const shoplose = document.getElementById('shopclose');
+
+
+
+    ShopApp.addEventListener('click', () => {
+        shopWindow.style.display = 'block';
+    });
+
+    shoponlinetb.addEventListener('click', () => {
+        shopWindow.style.display = 'block';
+    });
+
+    shoplose.addEventListener('click', () => {
+        shopWindow.style.display = 'none';
+    });
+
+
+
+
+
+    const calcApp = document.getElementById('app5');
+    const calcApptb = document.getElementById('calcApptb');
+    const calcWindow = document.getElementById('calcwindow');
+    const calcContent = document.querySelector('#calcwindow .window-content');
+    const calcClose = document.getElementById('calcclose');
+
+
+
+    calcApp.addEventListener('click', () => {
+        calcWindow.style.display = 'block';
+    });
+
+    calcApptb.addEventListener('click', () => {
+        calcWindow.style.display = 'block';
+    });
+
+    calcClose.addEventListener('click', () => {
+        calcWindow.style.display = 'none';
+    });
+
+
+
+    const searchapp = document.getElementById('app4');
+    const searchapptb = document.getElementById('tbsearch');
+    const searchwindow = document.getElementById('searchwindow');
+    const searchClose = document.getElementById('searchclose');
+
+
+
+    searchapp.addEventListener('click', () => {
+        searchwindow.style.display = 'block';
+    });
+
+    searchapptb.addEventListener('click', () => {
+        searchwindow.style.display = 'block';
+    });
+
+    searchClose.addEventListener('click', () => {
+        searchwindow.style.display = 'none';
+    });
+
+
+   const quotesapp = document.getElementById('app8');
+    const quotesapptb = document.getElementById('quotestb');
+    const quoteswindow = document.getElementById('quoteswindow');
+    const quotesClose = document.getElementById('quotesclose');
+
+
+
+    quotesapp.addEventListener('click', () => {
+        quoteswindow.style.display = 'block';
+    });
+
+    quotesapptb.addEventListener('click', () => {
+        quoteswindow.style.display = 'block';
+    });
+
+    quotesClose.addEventListener('click', () => {
+        quoteswindow.style.display = 'none';
+    });
+
+
+
+
+    const vid1 = document.getElementById('vid1');
+    const vid1vid = document.getElementById('vid1window');
+    const vid1Close = document.getElementById('vid1close');
+
+    vid1.addEventListener('click', () => {
+        vid1vid.style.display = 'block';
+    });
+
+    vid1Close.addEventListener('click', () => {
+        vid1vid.style.display = 'none';
+    });
+
+
+    const vid2 = document.getElementById('vid2');
+    const vid2vid = document.getElementById('vid2window');
+    const vid2Close = document.getElementById('vid2close');
+
+    vid2.addEventListener('click', () => {
+        vid2vid.style.display = 'block';
+    });
+
+    vid2Close.addEventListener('click', () => {
+        vid2vid.style.display = 'none';
+    });
+
+
+    const vid3 = document.getElementById('vid3');
+    const vid3vid = document.getElementById('vid3window');
+    const vid3Close = document.getElementById('vid3close');
+
+    vid3.addEventListener('click', () => {
+        vid3vid.style.display = 'block';
+    });
+
+    vid3Close.addEventListener('click', () => {
+        vid3vid.style.display = 'none';
+    });
+
+
+    const vid4 = document.getElementById('vid4');
+    const vid4vid = document.getElementById('vid4window');
+    const vid4Close = document.getElementById('vid4close');
+
+    vid4.addEventListener('click', () => {
+        vid4vid.style.display = 'block';
+    });
+
+    vid4Close.addEventListener('click', () => {
+        vid4vid.style.display = 'none';
+    });
+
+    const vid5 = document.getElementById('vid5');
+    const vid5vid = document.getElementById('vid5window');
+    const vid5Close = document.getElementById('vid5close');
+
+    vid5.addEventListener('click', () => {
+        vid5vid.style.display = 'block';
+    });
+
+    vid5Close.addEventListener('click', () => {
+        vid5vid.style.display = 'none';
+    });
+
+
+    const vid6 = document.getElementById('vid6');
+    const vid6vid = document.getElementById('vid6window');
+    const vid6Close = document.getElementById('vid6close');
+
+    vid6.addEventListener('click', () => {
+        vid6vid.style.display = 'block';
+    });
+
+    vid6Close.addEventListener('click', () => {
+        vid6vid.style.display = 'none';
+    });
+
+    const vid7 = document.getElementById('vid7');
+    const vid7vid = document.getElementById('vid7window');
+    const vid7Close = document.getElementById('vid7close');
+
+    vid7.addEventListener('click', () => {
+        vid7vid.style.display = 'block';
+    });
+
+    vid7Close.addEventListener('click', () => {
+        vid7vid.style.display = 'none';
+    });
+
+    const vid8 = document.getElementById('vid8');
+    const vid8vid = document.getElementById('vid8window');
+    const vid8Close = document.getElementById('vid8close');
+
+
+    vid8.addEventListener('click', () => {
+        vid8vid.style.display = 'block';
+    });
+
+    vid8Close.addEventListener('click', () => {
+        vid8vid.style.display = 'none';
+    });
+
+
+
+
+
+
+
+
+    const pic1 = document.getElementById('pic1');
+    const pic1vid = document.getElementById('pic1window');
+    const pic1Close = document.getElementById('pic1close');
+
+    pic1.addEventListener('click', () => {
+        pic1vid.style.display = 'block';
+    });
+
+    pic1Close.addEventListener('click', () => {
+        pic1vid.style.display = 'none';
+    });
+
+
+    const pic2 = document.getElementById('pic2');
+    const pic2vid = document.getElementById('pic2window');
+    const pic2Close = document.getElementById('pic2close');
+
+    pic2.addEventListener('click', () => {
+        pic2vid.style.display = 'block';
+    });
+
+    pic2Close.addEventListener('click', () => {
+        pic2vid.style.display = 'none';
+    });
+
+
+    const pic3 = document.getElementById('pic3');
+    const pic3vid = document.getElementById('pic3window');
+    const pic3Close = document.getElementById('pic3close');
+
+    pic3.addEventListener('click', () => {
+        pic3vid.style.display = 'block';
+    });
+
+    pic3Close.addEventListener('click', () => {
+        pic3vid.style.display = 'none';
+    });
+
+
+    const pic4 = document.getElementById('pic4');
+    const pic4vid = document.getElementById('pic4window');
+    const pic4Close = document.getElementById('pic4close');
+
+    pic4.addEventListener('click', () => {
+        pic4vid.style.display = 'block';
+    });
+
+    pic4Close.addEventListener('click', () => {
+        pic4vid.style.display = 'none';
+    });
+
+    const pic5 = document.getElementById('pic5');
+    const pic5vid = document.getElementById('pic5window');
+    const pic5Close = document.getElementById('pic5close');
+
+    pic5.addEventListener('click', () => {
+        pic5vid.style.display = 'block';
+    });
+
+    pic5Close.addEventListener('click', () => {
+        pic5vid.style.display = 'none';
+    });
+
+
+    const pic6 = document.getElementById('pic6');
+    const pic6vid = document.getElementById('pic6window');
+    const pic6Close = document.getElementById('pic6close');
+
+    pic6.addEventListener('click', () => {
+        pic6vid.style.display = 'block';
+    });
+
+    pic6Close.addEventListener('click', () => {
+        pic6vid.style.display = 'none';
+    });
+
+    const pic7 = document.getElementById('pic7');
+    const pic7vid = document.getElementById('pic7window');
+    const pic7Close = document.getElementById('pic7close');
+
+    pic7.addEventListener('click', () => {
+        pic7vid.style.display = 'block';
+    });
+
+    pic7Close.addEventListener('click', () => {
+        pic7vid.style.display = 'none';
+    });
+
+    const pic8 = document.getElementById('pic8');
+    const pic8vid = document.getElementById('pic8window');
+    const pic8Close = document.getElementById('pic8close');
+
+
+    pic8.addEventListener('click', () => {
+        pic8vid.style.display = 'block';
+    });
+
+    pic8Close.addEventListener('click', () => {
+        pic8vid.style.display = 'none';
+    });
+
+
+
+    const elementsToChangeColor = document.querySelectorAll('canvas, .window, .window1, .window2, .window3, .vid1win, .pic1win, .button123, .buttonegg, .vid, .taskbar-app, .app, .pic, .container, #search-bar, .custom-button');
+    let colorIndex = 0;
+    const colors = ['blue', '#00ff00', '#0000ff', 'cyan', 'purple', 'magenta', 'yellow', 'white', 'olive', 'gold', 'maroon', 'teal', 'lavender', 'gray', 'orange']; // You can add more colors
+
+    function changeColors() {
+      colorIndex = (colorIndex + 1) % colors.length;
+      const color = colors[colorIndex];
+
+      elementsToChangeColor.forEach(element => {
+        element.style.borderColor = color;
+      });
+    }
+
+    setInterval(changeColors, 700); // Change border colors every 0.7 seconds
+
+    function searchOnEnter(event) {
+      if (event.key === 'Enter') {
+        const query = document.getElementById('search-bar').value;
+        const searchUrl = `https://www.google.com/search?q=${encodeURIComponent(query)}`;
+
+
+    window.open(searchUrl, '_blank');
+      }
+    }
+
+    // Clear the search input when the page is reloaded
+    window.onload = function() {
+      document.getElementById('search-bar').value = '';
+    };
+
+    // JavaScript code for creating fireflies
+    function createFireflies() {
+      const container = document.querySelector('.fireflies-container');
+      const numFireflies = 5; // Number of fireflies you want every 600ms
+
+      setInterval(() => {
+        for (let i = 0; i < numFireflies; i++) {
+          const firefly = document.createElement('div');
+          firefly.className = 'firefly';
+          const x = Math.random() * 100; // Random X position
+          const y = Math.random() * 100; // Random Y position
+          const randomColor = getRandomColor(); // Get a random color
+          firefly.style.left = `${x}%`;
+          firefly.style.top = `${y}%`;
+          firefly.style.backgroundColor = randomColor;
+          container.appendChild(firefly);
+
+          setTimeout(() => {
+            container.removeChild(firefly);
+          }, 5000); // Remove firefly after 5 seconds
+        }
+      }, 300); // Add fireflies every 600 milliseconds
+    }
+
+    function getRandomColor() {
+      const letters = '0123456789ABCDEF';
+      let color = '#';
+      for (let i = 0; i < 6; i++) {
+        color += letters[Math.floor(Math.random() * 16)];
+      }
+      return color;
+    }
+
+    createFireflies();
+
+
+        let input = '';
+        const resultElement = document.getElementById('result');
+
+        function appendToInput(value) {
+            input += value;
+            resultElement.textContent = input;
+        }
+
+        function calculateResult() {
+            try {
+                input = eval(input).toString();
+                resultElement.textContent = input;
+            } catch (error) {
+                resultElement.textContent = 'Error';
+                input = '';
+            }
+        }
+
+        function clearInput() {
+            input = '';
+            resultElement.textContent = '0';
+        }
+
+
+
+        const buttons = document.querySelectorAll('.buttonegg');
+        const rightPanel = document.querySelector('.right-panel');
+
+        function addButton1Content() {
+            rightPanel.innerHTML = `
+                <div class="image-buttons">
+                    <button class="image-button" style="background-image: url('im1.jpg')" onclick="changeBackground('im1.jpg')"></button>
+                    <button class="image-button" style="background-image: url('im2.jpg')" onclick="changeBackground('im2.jpg')"></button>
+                    <button class="image-button" style="background-image: url('im3.jpg')" onclick="changeBackground('im3.jpg')"></button>
+                    <button class="image-button" style="background-image: url('im4.jpg')" onclick="changeBackground('im4.jpg')"></button>
+                    <button class="image-button" style="background-image: url('im5.jpg')" onclick="changeBackground('im5.jpg')"></button>
+                </div>
+                <div class="image-buttons">
+                    <button class="image-button" style="background-image: url('im6.jpg')" onclick="changeBackground('im6.jpg')"></button>
+                    <button class="image-button" style="background-image: url('im7.jpg')" onclick="changeBackground('im7.jpg')"></button>
+                    <button class="image-button" style="background-image: url('im8.jpg')" onclick="changeBackground('im8.jpg')"></button>
+                    <button class="image-button" style="background-image: url('im9.jpg')" onclick="changeBackground('im9.jpg')"></button>
+                    <button class="image-button" style="background-image: url('im10.jpg')" onclick="changeBackground('im10.jpg')"></button>
+                </div>
+            `;
+        }
+
+        function addButton2Content() {
+            rightPanel.innerHTML = `
+
+<h2>Font Size: </h2>
+                <div class="image-buttons">
+<button class="image-button1" onclick="changeFontSize(5)">Very Small</button> 
+<button class="image-button1" onclick="changeFontSize(10)">Small</button>
+<button class="image-button1" onclick="changeFontSize(20)">Medium</button>
+<button class="image-button1" onclick="changeFontSize(30)">Big</button>
+<button class="image-button1" onclick="changeFontSize(40)">Huge</button>
+                </div>
+<br>
+
+<h2>Font Color: </h2>
+                <div class="image-buttons">
+<button class="image-button1" onclick="changeFontColor('red')">Red</button>
+<button class="image-button1" onclick="changeFontColor('blue')">Blue</button>
+<button class="image-button1" onclick="changeFontColor('green')">Green</button>
+<button class="image-button1" onclick="changeFontColor('yellow')">Yellow</button>
+<button class="image-button1" onclick="changeFontColor('magenta')">Magenta</button>
+                </div>
+
+
+<h2>Font Type: </h2>
+                <div class="image-buttons">
+<button class="image-button1"  style="font-family:'Lucida Handwriting' " onclick="changeFontFamily('Lucida Handwriting')">Lucida Handwriting</button>
+<button class="image-button1"  style="font-family:'Curlz MT' " onclick="changeFontFamily('Curlz MT')">Curlz MT</button>
+<button class="image-button1"  style="font-family:'Blackadder ITC' " onclick="changeFontFamily('Blackadder ITC')">Blackadder ITC</button>
+<button class="image-button1"  style="font-family:'Bodoni MT Poster' " onclick="changeFontFamily('Bodoni MT Poster')">Bodoni MT Poster</button>
+<button class="image-button1"  style="font-family:'Bradley Hand ITC' " onclick="changeFontFamily('Bradley Hand ITC')">Bradley Hand ITC</button>
+
+                </div>
+
+            `;
+        }
+
+        function addButton4Content() {
+            rightPanel.innerHTML = `
+<h3>About the Website: </h3>
+<h4>
+Dive into an intricately crafted web OS that artfully replicates the gaming ecosystem.<br>
+This labor of love consumed an entire month, resulting in a meticulously designed <br>platform
+featuring a diverse array of 10 indispensable applications.
+
+</h4>
+<h3>About the Idea of the Website: </h3>
+<h4>
+Bored with the mundane Windows 10 experience and driven by a fervor for gaming, <br> the concept of
+crafting our unique operating system was born. The journey to develop a <br>full-scale OS akin to Windows was 
+ambitious, but we began humbly, allowing room for future <br>enhancements. Our aspiration is to offer a 
+transformative computing experience that caters to gamers and those seeking a dynamic digital world.
+</h4>
+
+            `;
+        }
+
+        function addButton3Content() {
+            rightPanel.innerHTML = `
+<h1>We appreciate your Support!!</h1>
+
+<h3> 1 Dollar $ </h3>
+<nav>
+
+        <a href="./1-dollar-donation" target="_blank">
+            <button class="donation-button">Go to 1 Dollar Donation Page</button>
+        </a>
+
+</nav>
+<h3> 5 Dollars $ </h3>
+<nav>
+
+        <a href="./5-dollar-donation" target="_blank">
+            <button class="donation-button">Go to 5 Dollars Donation Page</button>
+        </a>
+
+</nav>
+<h3> 10 Dollars $ </h3>
+<nav>
+
+        <a href="./10-dollar-donation" target="_blank">
+            <button class="donation-button">Go to 10 Dollars Donation Page</button>
+        </a>
+
+</nav>
+<h3> 30 Dollars $ </h3>
+<nav>
+
+        <a href="./30-dollar-donation" target="_blank">
+            <button class="donation-button">Go to 30 Dollars Donation Page</button>
+        </a>
+
+</nav>
+<h3> 50 Dollars $ </h3>
+<nav>
+
+        <a href="./50-dollar-donation" target="_blank">
+            <button class="donation-button">Go to 50 Dollars Donation Page</button>
+        </a>
+
+</nav>
+
+
+        `}
+
+
+        function changeBackground(imageUrl) {
+            document.body.style.backgroundImage = `url(${imageUrl})`;
+        }
+
+function changeFontSize(fontSize) {
+    document.body.style.fontSize = fontSize + 'px';
+}
+
+function changeFontColor(color) {
+    document.body.style.color = color;
+}
+
+
+        function changeFontFamily(fontFamily) {
+            document.body.style.fontFamily = fontFamily;
+        }
+    
+
+        buttons[0].addEventListener('click', addButton1Content);
+        buttons[1].addEventListener('click', addButton2Content);
+        buttons[2].addEventListener('click', addButton3Content);
+        buttons[3].addEventListener('click', addButton4Content);
+
+
+
+
+
+        const quotes = [
+            "The only way to do great work is to love what you do. - Steve Jobs",
+            "In the middle of every difficulty lies opportunity. - Albert Einstein",
+            "Success is not final, failure is not fatal: It is the courage to continue that counts. - Winston Churchill",
+            "The best way to predict the future is to create it. - Peter Drucker",
+            "Your time is limited, don't waste it living someone else's life. - Steve Jobs",
+            "Don't count the days, make the days count. - Muhammad Ali",
+            "The greatest glory in living lies not in never falling, but in rising every time we fall. - Nelson Mandela",
+            "Success is walking from failure to failure with no loss of enthusiasm. - Winston Churchill",
+            "The only thing that stands between you and your dream is the will to try and the belief that it is actually possible. - Joel Brown",
+            "Believe you can and you're halfway there. - Theodore Roosevelt",
+            "The way to get started is to quit talking and begin doing. - Walt Disney",
+            "You miss 100% of the shots you don't take. - Wayne Gretzky",
+            "The future belongs to those who believe in the beauty of their dreams. - Eleanor Roosevelt",
+            "Hardships often prepare ordinary people for an extraordinary destiny. - C.S. Lewis",
+            "The only person you should try to be better than is the person you were yesterday. - Unknown",
+            "Life is what happens when you're busy making other plans. - John Lennon",
+            "It does not matter how slowly you go as long as you do not stop. - Confucius",
+            "You can't go back and change the beginning, but you can start where you are and change the ending. - C.S. Lewis",
+            "Dream big and dare to fail. - Norman Vaughan",
+            "Success is not the key to happiness. Happiness is the key to success. If you love what you are doing, you will be successful. - Albert Schweitzer",
+            "The only limit to our realization of tomorrow will be our doubts of today. - Franklin D. Roosevelt",
+            "The road to success and the road to failure are almost exactly the same. - Colin R. Davis",
+            "The harder I work, the luckier I get. - Samuel Goldwyn",
+            "Success usually comes to those who are too busy to be looking for it. - Henry David Thoreau",
+            "It always seems impossible until it's done. - Nelson Mandela",
+            "Your work is going to fill a large part of your life, and the only way to be truly satisfied is to do what you believe is great work. And the only way to do great work is to love what you do. - Steve Jobs",
+            "The secret of getting ahead is getting started. - Mark Twain",
+            "I find that the harder I work, the more luck I seem to have. - Thomas Jefferson",
+            "Opportunities don't happen. You create them. - Chris Grosser",
+            "The future depends on what you do today. - Mahatma Gandhi",
+        ];
+
+        const quoteElement = document.getElementById("quote");
+        const prevButton = document.getElementById("prev");
+        const nextButton = document.getElementById("next");
+
+        let currentIndex = 0;
+
+        function displayQuote(index) {
+            quoteElement.textContent = quotes[index];
+        }
+
+        displayQuote(currentIndex);
+
+        prevButton.addEventListener("click", () => {
+            if (currentIndex === 0) {
+                currentIndex = quotes.length - 1;
+            } else {
+                currentIndex--;
+            }
+            displayQuote(currentIndex);
+        });
+
+        nextButton.addEventListener("click", () => {
+            if (currentIndex === quotes.length - 1) {
+                currentIndex = 0;
+            } else {
+                currentIndex++;
+            }
+            displayQuote(currentIndex);
+        });
+
+
+
+
+
+        const jokes = [
+            "Why don't scientists trust atoms? Because they make up everything.",
+            "Parallel lines have so much in common. It's a shame they'll never meet.",
+            "I told my wife she was drawing her eyebrows too high. She looked surprised.",
+            "Why did the scarecrow win an award? Because he was outstanding in his field.",
+            "Why don't skeletons fight each other? They don't have the guts.",
+            "I'm reading a book on anti-gravity. It's impossible to put down.",
+            "I used to play piano by ear, but now I use my hands.",
+            "What do you get when you cross a snowman and a vampire? Frostbite.",
+            "How do you organize a space party? You planet.",
+            "I'm friends with all electricians. We have such great current connections.",
+            "I used to be a baker, but I couldn't make enough dough.",
+            "How do you catch a squirrel? Climb a tree and act like a nut!",
+            "Why don't some couples go to the gym? Because some relationships don't work out.",
+            "Why did the tomato turn red? Because it saw the salad dressing.",
+            "I couldn't figure out why the baseball kept getting larger. Then it hit me.",
+            "What's orange and sounds like a parrot? A carrot.",
+            "I'm on a seafood diet. I see food and I eat it.",
+            "Did you hear about the kidnapping at the playground? They woke up.",
+"What do you call a bear with no teeth? A gummy bear.",
+"How do you make a tissue dance? You put a little boogie in it.",
+"Why did the bicycle fall over? Because it was two-tired.",
+"How does a penguin build its house? Igloos it together.",
+"Why don't oysters donate to charity? Because they are shellfish.",
+"Did you hear about the guy who invented Lifesavers? He made a mint.",
+"What do you call a cow with no legs? Ground beef.",
+
+
+        ];
+
+        const jokeElement = document.getElementById("joke");
+        const prev1Button = document.getElementById("prev1");
+        const next1Button = document.getElementById("next1");
+
+        let currentIndex1 = 0;
+
+        function displayJoke(index) {
+            jokeElement.textContent = jokes[index];
+        }
+
+        displayJoke(currentIndex1);
+
+        prev1Button.addEventListener("click", () => {
+            if (currentIndex1 === 0) {
+                currentIndex1 = jokes.length - 1;
+            } else {
+                currentIndex1--;
+            }
+            displayJoke(currentIndex1);
+        });
+
+        next1Button.addEventListener("click", () => {
+            if (currentIndex1 === jokes.length - 1) {
+                currentIndex1 = 0;
+            } else {
+                currentIndex1++;
+            }
+            displayJoke(currentIndex1);
+        });
+
+
+
+
+
+</script>
+</body>
+</html>

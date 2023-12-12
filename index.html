@@ -1,135 +1,480 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4072744372645233"
-     crossorigin="anonymous"></script>
 
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Password</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" href="icon2.png">
-  <style>
-    body {
-      margin: 0;
-      display: flex;
-      flex-direction: column; /* Stack elements vertically */
-      align-items: center;
-      justify-content: center; /* Center content vertically */
-  height: 100vh;
-      border: 7px solid red; /* Initial body border color */
-      transition: border-color 0.5s;
-      background-color: black;
-      border-radius: 50px;
-    }
-
-    .password-container {
-      position: relative;
-      border-radius: 10px;
-      padding: 10px;
-      margin: 10px;
-      border: 2px solid red; /* Initial password container border color */
-      transition: border-color 0.5s;
-    }
-
-h3:hover {
-transform: scale(1.4);
-    }
-
-
-    .password-container:hover {
-transform: scale(1.2);
-    }
-
-    input[type="password"] {
-      width: 200px;
-      height: 30px;
-      border: none;
-      outline: none;
-      font-size: 16px;
-      padding: 5px;
-      background-color: transparent;
-      color: white;
-    }
-
-    .hint-button {
-      cursor: pointer;
-      color: blue; /* Change text color to blue */
-      margin-top: 5px;
-    }
-
-    .hint-button:hover {
-      transform: scale(1.5);
-    }
-
-    h3 {
-      color: white;
-    }
-
-    .hint-text {
-      color: white;
-      font-size: 20px;
-      margin-top: 10px;
-      display: none;
-    }
-
-    .wrong-password {
-      color: red;
-      font-size: 14px;
-      margin-top: 5px;
-      display: none; /* Initially hidden */
-    }
-  </style>
-  <script>
-    document.addEventListener("DOMContentLoaded", function() {
-      const passwordInput = document.getElementById('password-input');
-      const heading = document.getElementById('heading');
-      const hintButton = document.querySelector('.hint-button');
-      const hintTextElement = document.querySelector('.hint-text');
-      const wrongPasswordElement = document.querySelector('.wrong-password');
-
-      let borderColorIndex = 0;
-      const borderColors = ['red', 'green', 'cyan'];
-
-      function changeBorderColor() {
-        borderColorIndex = (borderColorIndex + 1) % borderColors.length;
-        document.body.style.borderColor = borderColors[borderColorIndex];
-        passwordInput.parentElement.style.borderColor = borderColors[borderColorIndex];
-      }
-
-      passwordInput.addEventListener('keydown', function(event) {
-        if (event.key === 'Enter') {
-          if (passwordInput.value === '65478') {
-            window.location.href = 'win.html';
-          } else {
-            wrongPasswordElement.textContent = 'Wrong password';
-            wrongPasswordElement.style.display = 'block';
-
-            setTimeout(function() {
-              wrongPasswordElement.style.display = 'none';
-            }, 1000); // Display "Wrong password" for 2 seconds
-          }
-        }
-      });
-
-      hintButton.addEventListener('click', function() {
-        if (hintTextElement.style.display === 'block') {
-          hintTextElement.style.display = 'none';
-        } else {
-          hintTextElement.style.display = 'block';
-        }
-      });
-
-      setInterval(changeBorderColor, 700); // Change border color every 0.7 seconds
-    });
-  </script>
+<title> Windows 15 </title>
+<link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
-  <h3 id="heading">Password: </h3>
-  <div class="password-container">
-    <input type="password" id="password-input" placeholder="Password">
-    <div class="wrong-password"></div>
+<div id="desktop">
+    <div class="app" id="app1">Notepad</div>
+    <div class="app" id="app2">Watch Tunnel</div>
+  <div class="app" id="app3">Shop<br>Online Services</div>
+  <div class="app" id="app4">Toggle</div>
+  <div class="app" id="app5">Calculator</div>
+  <div class="app" id="app6">Gallery</div>
+  <div class="app" id="app7">Paint Time</div>
+  <div class="app" id="app8">Amazing Quotes</div>
+  <div class="app" id="app9">Funny Jokes</div>
+  <div class="app" id="app10">Settings</div>
+
+</div>
+<div id="taskbar">
+    <div class="taskbar-app" id="taskbar-notepad">
+        <img src="img-1.png" alt="Notepad Icon">
+    </div>
+    <div class="taskbar-app" id="taskbar-watch-tunnel">
+        <img src="img-2.png" alt="Watch Tunnel Icon">
+    </div>
+  <div class="taskbar-app" id="shoponlinetb">
+    <img src="img-3.png" alt="shop Icon">
   </div>
-  <div class="hint-button">Hint</div>
-  <div class="hint-text">Password is 65478</div>
+  <div class="taskbar-app" id="tbsearch">
+    <img src="img-4.png" alt="Toggle Icon">
+  </div>
+  <div class="taskbar-app" id="calcApptb">
+    <img src="img-5.png" alt="Calculator Icon">
+  </div>
+  <div class="taskbar-app" id="taskbar-watch-tunnel1">
+    <img src="img-6.png" alt="Gallery Icon">
+  </div>
+  <div class="taskbar-app" id = "painttimetb">
+    <img src="img-7.png" alt="Paint Time Icon">
+  </div>
+  <div class="taskbar-app" id="quotestb">
+    <img src="img-8.png" alt="Notes Icon">
+  </div>
+  <div class="taskbar-app" id="joketb">
+    <img src="img-9.png" alt="Voice Record Icon">
+  </div>
+  <div class="taskbar-app" id="settingstb">
+    <img src="img-10.png" alt="Settings Icon">
+  </div>
+</div>
+<div class="window" id="notepad-window">
+    <div class="window-header">
+        <span class="window-close" id="notepad-close">&times;</span>
+        Notepad
+        <button id="notepad-save">Save</button>
+    </div>
+    <div class="window-content" contenteditable="true" placeholder="Start writing here..."></div>
+</div>
+
+
+
+
+<div class="window" id="shopwindow">
+    <div class="window-header">
+        <span class="window-close" id="shopclose">&times;</span>
+       Shop Online
+    </div>
+    <div class="window-content">
+
+ <p class = "para">Coming Soon!</p>
+
+</div>
+</div>
+
+
+
+
+<div class="window" id="calcwindow">
+    <div class="window-header">
+        <span class="window-close" id="calcclose">&times;</span>
+        Calculator
+    </div>
+    <div class="window-content">
+    <div id="calculator">
+        <div id="result">0</div>
+        <div id="buttons">
+            <div id="clear" class="button" onclick="clearInput()">C</div>
+            <div class="button" onclick="appendToInput('1')">1</div>
+            <div class="button" onclick="appendToInput('2')">2</div>
+            <div class="button" onclick="appendToInput('3')">3</div>
+            <div class="button" onclick="appendToInput('+')">+</div>
+            <div class="button" onclick="appendToInput('4')">4</div>
+            <div class="button" onclick="appendToInput('5')">5</div>
+            <div class="button" onclick="appendToInput('6')">6</div>
+            <div class="button" onclick="appendToInput('-')">-</div>
+            <div class="button" onclick="appendToInput('7')">7</div>
+            <div class="button" onclick="appendToInput('8')">8</div>
+            <div class="button" onclick="appendToInput('9')">9</div>
+            <div class="button" onclick="appendToInput('*')">&times;</div>
+            <div class="button" onclick="appendToInput('0')">0</div>
+            <div class="button" onclick="appendToInput('.')">.</div>
+            <div class="button" onclick="calculateResult()">=</div>
+        </div>
+    </div>
+
+</div>
+</div>
+
+
+<div class="window" id="searchwindow">
+    <div class="window-header">
+        <span class="window-close" id="searchclose">&times;</span>
+        Toggle Search
+    </div>
+    <div class="window-content">
+  <div class="container">
+    <input type="text" id="search-bar" placeholder="Search Google" onkeydown="searchOnEnter(event)">
+    <div class="buttons-container">
+<a href="https://www.google.com/" class="custom-button" target="_blank"><img src="1.png"></a>
+<a href="https://www.gmail.com" class="custom-button" target="_blank"><img src="2.png"></a>
+<a href="https://www.youtube.com" class="custom-button" target="_blank"><img src="3.png"></a>
+<a href="https://www.canva.com" class="custom-button" target="_blank"><img src="4.png"></a>
+
+    </div>
+    <div class="fireflies-container"></div>
+  </div>
+</div>
+</div>
+
+
+<div class="window1" id="watch-tunnel-window">
+    <div class="window-header1">
+        <span class="window-close1" id="watch-tunnel-close">&times;</span>
+        Watch Tunnel
+    </div>
+    <div class="window-content1">
+    <div class="vid" id="vid1">Quran</div>
+   <div class="vid" id="vid2">Football</div>
+   <div class="vid" id="vid3">Funny</div>
+   <div class="vid" id="vid4">Cute</div>
+   <div class="vid" id="vid5">Respect</div>
+   <div class="vid" id="vid6">Painting</div>
+   <div class="vid" id="vid7">Programming</div>
+   <div class="vid" id="vid8">Satisfying</div>
+    </div>
+</div>
+
+<div class="vid1win" id="vid1window">
+    <div class="vid1header">
+        <span class="vid1x" id="vid1close">&times;</span>
+        Quran
+    </div>
+    <div class="vid1content" contenteditable="false">
+<h2>Translation of Surah Al-Qadar</h2>
+    <video controls width="350" height="400">
+        <source src="Surah Al-Qadar.mp4" type="video/mp4" id="video1">
+    </video>  
+   </div>
+</div>
+
+
+<div class="vid1win" id="vid2window">
+    <div class="vid1header">
+        <span class="vid1x" id="vid2close">&times;</span>
+        Football
+    </div>
+    <div class="vid1content" contenteditable="false">
+<h2>Psg vs Al-Nassr</h2>
+    <video controls width="350" height="400">
+        <source src="Psg vs Al-Nassr.mp4" type="video/mp4">
+    </video>  
+   </div>
+</div>
+
+
+<div class="vid1win" id="vid3window">
+    <div class="vid1header">
+        <span class="vid1x" id="vid3close">&times;</span>
+        Funny
+    </div>
+    <div class="vid1content" contenteditable="false">
+<h2>Funny Baby Videos <br> Try not to laugh!</h2>
+    <video controls width="350" height="400">
+        <source src="Funnybabies.mp4" type="video/mp4">
+    </video>  
+   </div>
+</div>
+
+
+<div class="vid1win" id="vid4window">
+    <div class="vid1header">
+        <span class="vid1x" id="vid4close">&times;</span>
+        Cute
+    </div>
+    <div class="vid1content" contenteditable="false">
+<h2>Cute Baby Videos</h2>
+    <video controls width="350" height="400">
+        <source src="cute.mp4" type="video/mp4">
+    </video>  
+   </div>
+</div>
+
+
+<div class="vid1win" id="vid5window">
+    <div class="vid1header">
+        <span class="vid1x" id="vid5close">&times;</span>
+        Respect
+    </div>
+    <div class="vid1content" contenteditable="false">
+<h2>Respect Videos</h2>
+    <video controls width="350" height="400">
+        <source src="respect.mp4" type="video/mp4">
+    </video>  
+   </div>
+</div>
+
+
+<div class="vid1win" id="vid6window">
+    <div class="vid1header">
+        <span class="vid1x" id="vid6close">&times;</span>
+        Painting
+    </div>
+    <div class="vid1content" contenteditable="false">
+<h2>Painting Video</h2>
+    <video controls width="350" height="400">
+        <source src="paint.mp4" type="video/mp4">
+    </video>  
+   </div>
+</div>
+
+
+<div class="vid1win" id="vid7window">
+    <div class="vid1header">
+        <span class="vid1x" id="vid7close">&times;</span>
+        Programming
+    </div>
+    <div class="vid1content" contenteditable="false">
+<h2>Cat Programming</h2>
+    <video controls width="350" height="400">
+        <source src="cat.mp4" type="video/mp4">
+    </video>  
+   </div>
+</div>
+
+
+<div class="vid1win" id="vid8window">
+    <div class="vid1header">
+        <span class="vid1x" id="vid8close">&times;</span>
+        Satisfying
+    </div>
+    <div class="vid1content" contenteditable="false">
+<h2>Satisfying Video</h2>
+    <video controls width="350" height="400">
+        <source src="satisfy.mp4" type="video/mp4">
+    </video>  
+   </div>
+</div>
+
+<div class="window2" id="canvaswindow">
+    <div class="window-header2">
+        <span class="window-close2" id="canvasclose">&times;</span>
+        Paint Time
+    </div>
+    <div class="window-content2" id = "paintcontent">
+   <div class="controls">
+        <label for="brushColor">Color:</label>
+        <input type="color" id="brushColor" value="#000000">
+
+        <label for="brushSize">Size:</label>
+        <input type="range" id="brushSize" min="1" max="50" value="5">
+
+        <label for="brushType">Type:</label>
+        <select id="brushType">
+            <option value="round">Round</option>
+            <option value="square">Square</option>
+        </select>
+
+        <button id="fillBucket">Fill Canvas</button>
+        <button id="clearCanvas">Clear</button>
+        <button id="saveImage">Save</button>
+    </div>
+<br>
+    <canvas id="canvas"></canvas>
+</div>
+</div>
+
+
+
+<div class="window3" id="settingswindow">
+    <div class="window-header3">
+        <span class="window-close3" id="settingsclose">&times;</span>
+        Settings
+    </div>
+    <div class="window-content3">
+        <div class="container1">
+            <div class="top-panel" id="topp">
+                <div class="buttonegg" id="button1">Background</div>
+                <div class="buttonegg" id="button2">Accessibility</div>
+                <div class="buttonegg" id="button4">Donate</div>
+                <div class="buttonegg" id="button3">About</div>
+            </div>
+            <div class="bottom-panel">
+                <div class="right-panel">
+                    <!-- Content will be dynamically loaded here -->
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+<div class="window1" id="watch-tunnel-window1">
+    <div class="window-header1">
+        <span class="window-close1" id="watch-tunnel-close1">&times;</span>
+        Gallery
+    </div>
+    <div class="window-content1">
+    <div class="pic" id="pic1">Car</div>
+   <div class="pic" id="pic2">Mountain</div>
+   <div class="pic" id="pic3">Skull</div>
+   <div class="pic" id="pic4">Sunset</div>
+   <div class="pic" id="pic5">Satisfying</div>
+   <div class="pic" id="pic6">Wolf</div>
+   <div class="pic" id="pic7">Tiger</div>
+   <div class="pic" id="pic8">Car 2</div>
+    </div>
+</div>
+
+<div class="pic1win" id="pic1window">
+    <div class="pic1header">
+        <span class="pic1x" id="pic1close">&times;</span>
+        Car
+    </div>
+    <div class="pic1content" contenteditable="false">
+    <img src="im10.jpg" alt="Car"  width="80%" height="90%">
+   </div>
+</div>
+
+
+<div class="pic1win" id="pic2window">
+    <div class="pic1header">
+        <span class="pic1x" id="pic2close">&times;</span>
+        Mountain
+    </div>
+    <div class="pic1content" contenteditable="false">
+    <img src="im1.jpg" alt="Mountain"  width="80%" height="90%">
+   </div>
+</div>
+
+
+<div class="pic1win" id="pic3window">
+    <div class="pic1header">
+        <span class="pic1x" id="pic3close">&times;</span>
+        Skull
+    </div>
+    <div class="pic1content" contenteditable="false">
+    <img src="im4.jpg" alt="Skull"  width="80%" height="90%"> 
+   </div>
+</div>
+
+
+<div class="pic1win" id="pic4window">
+    <div class="vid1header">
+        <span class="vid1x" id="pic4close">&times;</span>
+        Sunset
+    </div>
+    <div class="vid1content" contenteditable="false">
+    <img src="im3.jpg" alt="Sunset"  width="80%" height="90%">
+   </div>
+</div>
+
+
+<div class="pic1win" id="pic5window">
+    <div class="vid1header">
+        <span class="vid1x" id="pic5close">&times;</span>
+        Satisfying
+    </div>
+    <div class="vid1content" contenteditable="false">
+    <img src="im2.jpg" alt="Satisfying"  width="80%" height="90%">
+   </div>
+</div>
+
+
+<div class="pic1win" id="pic6window">
+    <div class="vid1header">
+        <span class="vid1x" id="pic6close">&times;</span>
+        Wolf
+    </div>
+    <div class="vid1content" contenteditable="false">
+    <img src="im7.jpg" alt="Wolf"  width="80%" height="90%">
+   </div>
+</div>
+
+
+<div class="pic1win" id="pic7window">
+    <div class="vid1header">
+        <span class="vid1x" id="pic7close">&times;</span>
+        Tiger
+    </div>
+    <div class="vid1content" contenteditable="false">
+    <img src="im8.jpg" alt="Tiger"  width="80%" height="90%">
+   </div>
+</div>
+
+
+<div class="pic1win" id="pic8window">
+    <div class="vid1header">
+        <span class="vid1x" id="pic8close">&times;</span>
+        Car 2
+    </div>
+    <div class="vid1content" contenteditable="false">
+    <img src="im5.jpg" alt="Car 2" width="80%" height="90%">
+   </div>
+</div>
+
+
+
+
+
+<div class="window" id="quoteswindow">
+    <div class="window-header">
+        <span class="window-close" id="quotesclose">&times;</span>
+        Amazing Quotes
+    </div>
+    <div class="window-content">
+    <h1 class="h11">Amazing Quotes</h1>
+<hr>
+    <div id="quote"></div>
+<hr>
+<br>
+    <div id="buttons123">
+        <button class="button123" id="prev">Previous</button>
+        <button class="button123" id="next">Next</button>
+    </div>
+
+</div>
+</div>
+
+
+
+
+<div class="window" id="jokewindow">
+    <div class="window-header">
+        <span class="window-close" id="jokeclose">&times;</span>
+        Funny Jokes
+    </div>
+    <div class="window-content">
+    <h1 class = "h11">Funny Jokes</h1>
+<hr>
+    <div id="joke"></div>
+<hr>
+<br>
+    <div id="buttons123">
+        <button class="button123" id="prev1">Previous</button>
+        <button class="button123" id="next1">Next</button>
+    </div>
+
+
+</div>
+</div>
+
+
+
+
+
+
+<script src="script.js">
+
+</script>
 </body>
 </html>
